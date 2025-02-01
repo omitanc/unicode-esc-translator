@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Unicode Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Unicode Translator</h1>
+  <div id="container">
+    <!-- 左側(Unicodeエスケープ形式) -->
+    <div class="box">
+      <label for="leftArea">Unicodeエスケープ形式（区切り文字：, や ; ）</label>
+      <textarea id="leftArea" placeholder="\u3042,\u3044;\u3046"></textarea>
+      <button id="copyLeft">左の内容をコピー</button>
+    </div>
+    <!-- 右側(人間が読める文字) -->
+    <div class="box">
+      <label for="rightArea">人間が読める文字（区切り文字：, や ; ）</label>
+      <textarea id="rightArea" placeholder="あ,い;う"></textarea>
+      <button id="copyRight">右の内容をコピー</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

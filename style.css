@@ -1,0 +1,40 @@
+/* 全体レイアウト */
+#container {
+    display: flex;
+    flex-wrap: wrap; /* 横幅が狭い場合は折り返す */
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* テキストエリアをある程度広めに */
+  }
+  
+  .box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .box textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: vertical;
+  }
+  
+  button {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* エラー表示時に文字を赤くする */
+  .error {
+    color: red;
+  }
+  
